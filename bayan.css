@@ -16,6 +16,29 @@ input {
   display: none;
 }
 
+h1,
+h2,
+h3 {
+  font-family: 'Caveat', cursive;
+  color: darkslategrey;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 120%;
+  color: rgb(20, 56, 56);
+}
+
+h2 {
+  font-size: 1.7rem;
+  line-height: 120%;
+}
+
+h3 {
+  font-size: 1.2rem;
+  line-height: 120%;
+}
+
 input:checked + label > .mem-card__img {
   width: 90%;
   max-height: 100vh;
@@ -28,26 +51,8 @@ input:checked + label > .mem-card__header > img {
   transition: all 1s;
 }
 
-h1,
-h2,
-h3 {
-  font-family: 'Caveat', cursive;
-  color: darkslategrey;
-}
-
-h1 {
-  font-size: 2.5rem;
-  line-height: 120%;
-}
-
-h2 {
-  font-size: 1.7rem;
-  line-height: 120%;
-}
-
-h3 {
-  font-size: 1.2rem;
-  line-height: 120%;
+input:checked + label > .mem-card__header > h2 {
+  color: firebrick;
 }
 
 .wrapper {
