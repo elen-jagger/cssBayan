@@ -91,3 +91,33 @@ label {
 .mem-card__img {
   max-height: 0;
 }
+
+@media (min-width: 820px) {
+  .wrapper {
+    padding: 2rem;
+  }
+
+  label {
+    padding: 1.4rem;
+  }
+
+  h1 {
+    font-size: 3.7rem;
+  }
+
+  h2 {
+    font-size: 2.7rem;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+  }
+
+  .mem-card__header {
+    margin-bottom: 1.2rem;
+  }
+
+  .mem-card__header > img {
+    height: 2.4rem;
+  }
+}
