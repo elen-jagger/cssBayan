@@ -200,6 +200,10 @@ label {
   }
 
   input:checked + label > .mem-card__header > img {
+    display: none;
+  }
+
+  input:checked:hover + label > .mem-card__header > img {
     display: block;
     height: 4rem;
   }
