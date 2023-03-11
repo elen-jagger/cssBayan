@@ -61,6 +61,11 @@ input:checked + label > .mem-card__header > h2 {
   padding: 1rem;
 }
 
+.mem-card-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
 header,
 label,
 .mem-card__header {
@@ -119,5 +124,118 @@ label {
 
   .mem-card__header > img {
     height: 2.4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    padding: 2.5rem;
+  }
+
+  label {
+    padding: 2.2rem;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  h3 {
+    font-size: 2.7rem;
+  }
+
+  .mem-card__header {
+    margin-bottom: 1.7rem;
+  }
+
+  .mem-card__header > img {
+    height: 3rem;
+  }
+
+  input:checked + label > .mem-card__img {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .wrapper {
+    padding: 8.5rem;
+  }
+
+  header {
+    padding: 2rem;
+  }
+
+  label {
+    padding: 2.5rem;
+  }
+
+  h1 {
+    font-size: 7.5rem;
+  }
+
+  h2 {
+    font-size: 5rem;
+  }
+
+  h3 {
+    font-size: 4.2rem;
+  }
+
+  .mem-card__header {
+    margin-bottom: 2.2rem;
+    padding: 0 2rem 0 3rem;
+  }
+
+  .mem-card__header > img {
+    display: none;
+  }
+
+  input:checked + label > .mem-card__img {
+    width: 57%;
+  }
+
+  input:checked + label > .mem-card__header > img {
+    display: block;
+    height: 4rem;
+  }
+
+  label:hover {
+    cursor: pointer;
+  }
+
+  .mem-card-container:hover .mem-card__header > h2 {
+    color: firebrick;
+  }
+
+  .mem-card-container:hover label > .mem-card__header > img {
+    display: block;
+    height: 4rem;
+  }
+
+  label:hover .mem-card__header > img {
+    transform: rotate(-90deg);
+    transition: all 1s;
+  }
+
+  label:hover .mem-card__img {
+    display: block;
+    margin: 0 auto;
+    max-height: 100vh;
+    width: 57%;
+    transition: all 1.5s;
+  }
+
+  .mem-card:active .mem-card__header > h2 {
+    color: darkslategrey;
+  }
+
+  .mem-card:active .mem-card__img {
+    opacity: 30%;
+    transition: all 1s;
   }
 }
